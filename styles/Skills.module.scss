@@ -1,0 +1,83 @@
+@import "./global";
+
+.skills {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    .title {
+        @extend .titles;
+        position: absolute;
+        inset: 0;
+        padding: 0.2rem 1rem;
+        background-color: black;
+        color: white;
+        font-weight: 400;
+    }
+    .parentContainer {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    .slideMenu {
+        .box {
+            width: 100%;
+            height: 20rem;
+            color: black;
+            text-align: center;
+            padding: 0.6rem 0px;
+        .TextHead {
+            font-size: 2rem;
+            text-align: center;
+            // color: $grey;
+            letter-spacing: 1.1px;
+            font-weight: 700;
+        }
+
+        .parentBox {
+            @include flex(flex-start, flex-start, row);
+            white-space: nowrap;
+            gap: 15px;
+            padding: 0.5rem 1rem;
+            @include media(mobile, tablet) {
+                gap: 10px;
+                padding: 0rem;
+            }
+            .round {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 100px;
+            color: black;
+            @include flex();
+            @include media(mobile) {
+                width: 4rem;
+                height: 4rem;
+                gap: 5px; 
+            }
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                    @include media(mobile) {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                }
+
+        img {
+            width: 3.5rem;
+            height: 3.5rem;
+            object-fit: cover;
+            @include media(mobile) {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            // filter: grayscale(100%);
+        }
+        }
+    }
+        }
+    }
+    }
+
+}

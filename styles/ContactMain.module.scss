@@ -1,0 +1,124 @@
+@import "./global";
+
+.main {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    color: white;
+    @include flex(flex-start, flex-start, column);
+    @include media(tablet, mobile) {
+        padding: 1rem 0.2rem;
+    }
+    .head {
+        color: white;
+        font-weight: 700;
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: left;
+
+        span {
+            color: orange;
+        }
+    }
+    h3 {
+        font-weight: 300;
+        border-bottom: 1px solid #8a8a8a;  
+        span {
+            color: orange;
+        }
+    }
+    .lower {
+         p {
+            width: 90%;
+            text-align: left;
+            font-family: var(--second-font);
+            font-weight: 300;
+
+            @include media(tablet, mobile) {
+                width: 100%;
+                padding: 0px 0.3rem 2rem;
+
+            }
+            @include media(mobile) {
+                font-size: 0.9rem;
+                padding: 0px 0.3rem 2rem;
+            }
+            span {
+                padding: 0px 3px;
+                border-bottom: 1px solid orange;
+            }
+         }
+        .link {
+            text-decoration: none;
+            color: white;
+            .button {
+                @include flex;
+            @extend .titles;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            position: absolute;
+            right: 0%;
+            top: 85%;
+            padding: 0px 0.8rem 1rem;
+            padding-right: 3%;
+            border-radius: 30px 0px 0px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            overflow: hidden;
+            letter-spacing: 1.5px;
+            transition: 0.5s all ease;
+
+            @include media(tablet, mobile) {
+                font-size: 1.2rem;
+                top: 91%;
+                padding: 0px 0.8rem 0.5rem;
+            }
+            &:hover {
+                font-size: 1.6rem
+            }
+        }
+
+        }
+
+        .social {
+            @include flex();
+            margin: 8px 0px;
+            ul {
+                @include flex(flex-start, flex-start);
+                list-style: none;
+                gap: 8px;
+                @include media(tablet, mobile) {
+                    gap: 6px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        li {
+                            background-color: white;
+                            color: black;
+                            transform: scale(1.1);
+                        }
+                    }
+                    li {
+                    border-radius: 9px;
+                    padding: 2px 5px 5px;
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    @include flex();
+                    transition: 0.2s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+                        @include media(tablet, mobile) {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+
+                }
+                }
+            }
+        }
+    }
+}

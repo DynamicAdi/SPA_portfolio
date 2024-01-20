@@ -1,0 +1,34 @@
+@import "./global";
+
+.main {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(145deg, #f885af, #d91a2e);
+    position: relative;
+    padding: 1.8rem 1.2rem;
+    text-align: left;
+    .tag {
+        background: #fa0186;
+    }
+    .child {
+        color: white;
+
+    h2 {
+        // text-decoration: ;
+        border-bottom: 1px solid currentColor;
+        width: fit-content;
+    }
+    p {
+        font-family: var(--second-font);
+        font-weight: 300;
+        font-size: 0.95rem;
+        margin-top: 4px;
+        line-height: 1.1rem;
+        @include media(tablet) {
+            font-size: 1.16rem;
+                line-height: initial;
+          }
+    }
+    }
+}

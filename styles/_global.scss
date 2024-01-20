@@ -1,0 +1,103 @@
+@mixin full($w: 100vw, $h: 100vh) {
+  width: $w;
+  height: $h;
+}
+
+@mixin flex($jc: center, $ai: center, $fd: row, $fw: wrap) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+.titles {
+  text-align: left;
+  padding: 0;
+  color: black;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.1rem 0.6rem 0px;
+  border-radius: 0px 0px 20px 0px;
+  font-family: var(--title-font);
+}
+
+.heads {
+  position: absolute;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: white;
+  border-radius: 0px 0px 30px;
+  font-size: 1.8rem;
+}
+.back {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  .backButton {  
+      cursor: pointer;
+      padding: 6px 12px;
+        border: transparent;
+        outline: transparent;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        transition: 0.2s ease;
+        font-weight: 400;
+        border-radius: 10px; 
+      &:hover {
+          background-color: darken(black,20%);
+          transform: scale(1.1);
+      }
+  }
+}
+
+.tag {
+  h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+    font-family: var(--second-font);
+}
+width: fit-content;
+border-radius: 0px 0px 8px 8px;
+padding: 0.3rem 0.5rem 0.3rem;
+color: white;
+position: absolute;
+top: 0;
+left: 15%;
+@include flex();
+gap: 10px;
+}
+$grey: #797979;
+$radius: 30px;
+$gradient: linear-gradient(145deg, #0b0b0b, #404040);
+
+$color: #dddddd;
+$breakpoints: (
+  mobile : 0px, 
+  tablet : 589px,
+  desktop: 899px,
+);
+
+$maxPoints: (
+	mobile: 590px,
+	tablet: 1023px,
+  desktop: 2080px
+
+);
+
+@mixin media($keys...) {
+	@each $key in $keys {
+		@media screen and (min-width: map-get($breakpoints, $key)) and (max-width: map-get($maxPoints, $key)) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,114 @@
+@import "./global";
+
+.main {
+    @include full($h: auto);
+    padding: 3rem 2rem;
+    background: #f7f7f7;
+
+    @include media(mobile) {
+        padding: 3rem 0rem;
+    }
+    .head {
+        @extend .titles;
+        background: $gradient;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2.3rem;
+        font-weight: 400;
+        font-family: var(--title-font);
+        border-radius: 0px 0px 0px 20px;
+
+    }
+    .child {
+        width: 100%;
+        height: 100%;
+        @include flex(center);
+        gap: 50px; 
+        padding: 1rem;
+    .boxes {
+        width: 18rem;
+        height: 20rem;
+        border-radius: $radius;
+        box-shadow: 10px 10px 25px 1px rgba(0, 0, 0, 0.256);
+    .box {
+        width: 100%;
+        height: 100%;
+        background: #e1e1e1;
+        border-radius: $radius;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: $radius;
+        }
+        .content {
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            height: 55%;
+            background: whitesmoke;
+            border-radius: 25px 25px $radius $radius;
+            padding: 1rem;
+            overflow: hidden;
+            @include flex(flex-start, flex-start, column);
+            gap: 4px;
+            transform: translateY(58%);
+            transition: 0.6s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            .upper {
+                @include flex();
+                gap: 10px;
+                h3 {
+                    font-size: 0.8rem;
+                    padding: 4px 6px;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    background-color: #69696952;
+                    color: #616161;
+                }
+                .level {
+
+                &.easy {
+                    background-color: #00ffff52;
+                    color: #098787;
+                }
+
+                &.imidate {
+                    background-color: #fffc69;
+                    color: #ce9e00;
+                }
+                &.hard {
+                    background: #ffa2a2;
+                    color: #b62020;
+                }
+                }
+            }
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                border-bottom: 1px solid $grey;
+                width: 100%;
+            }
+            p {
+                // width: 80%;
+                font-size: 0.9rem;
+
+                @include media(mobile) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        &:hover {
+            .content {
+                transform: translateY(0);
+            }
+        }
+    }
+    }
+    }
+}
