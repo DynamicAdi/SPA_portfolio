@@ -24,10 +24,10 @@
         }
         
             @include media(tablet, mobile) {
-                padding: .5rem;
+                padding: .8rem;
             }
             @include media(mobile){
-                padding: 0.4rem;
+                padding: 1rem;
             }
     .box {
         background-color: #ffffff80;

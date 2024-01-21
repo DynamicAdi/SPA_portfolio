@@ -17,7 +17,7 @@
         height: 7rem;
     }
     @include media(mobile) {
-        height: 7.1rem;
+        height: 7.3rem;
     }
     &.graspary {
         background: linear-gradient(145deg, #009FC2, #2d3a46);
@@ -36,11 +36,14 @@
         @include flex(center, center, column);
         border-radius: $radius;
 
+        @include media(mobile) {
+            width: 100%;
+        }
     .img {
         width: 7rem;
         height: 7rem;
 
-        @include media(tablet) {
+        @include media(mobile,tablet) {
             width: 5rem;
             height: 5rem;
         }
