@@ -18,6 +18,7 @@ import ThreeModel from "@/public/utils/serve/modeling.webp";
 import Interior from "@/public/utils/serve/interior.webp";
 import layout from "@/public/utils/serve/layout.webp";
 import writer from "@/public/utils/serve/story.webp";
+import Image from "next/image";
 
 
 function Services() {
@@ -67,7 +68,7 @@ function Services() {
       }
     ]
   };
-  let icons = [];
+
 
   let skills = [
     {
@@ -138,8 +139,7 @@ function Services() {
             >
               <div className={style.content}>
                 <div className={style.img}>
-                  {/* {console.log(developer)} */}
-                 <img src={txt.img} alt={txt.title} />
+                 <Image src={txt.img} alt={txt.title} objectFit="contain" width={100} height={100} priority={true}/>
                 </div>
                 <h2 className={style.head}>{txt.title}</h2>
               </div>

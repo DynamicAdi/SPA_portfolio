@@ -29,6 +29,9 @@ export default function HomeBox() {
     <div className={`${css.parent} ${secondary.variable} ${primary.className} ${titles.variable}`}>
       <Links />
     <div className={css.section}>
+
+
+
         <motion.div 
         initial={'hidden'}
         whileInView={'show'}
@@ -39,7 +42,9 @@ export default function HomeBox() {
           ease: [0.34, 1.56, 0.64, 1]
         }}
         
-        className={`${css.box} ${css.intro}`}><Intro /></motion.div>
+        className={`${css.box} ${css.intro}`}><Intro />
+        </motion.div>
+
         <motion.div 
         initial={{
           y: -100,
@@ -113,6 +118,7 @@ export default function HomeBox() {
           ease: [0.68, -0.55, 0.265, 1.55]
         }}
         className={`${css.box} ${css.principal}`}><HeadProject /></motion.div>
+
         <motion.div 
         initial={{
           scale: 0,

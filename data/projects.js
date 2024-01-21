@@ -5,7 +5,7 @@ export const projects = [
       description: "This is a Telegram bot that allows users to download videos and audio from YouTube. It is written in Python using the Telethon library. The bot is easy to use and can be deployed on any server. The benefits are Users can download videos and audio from YouTube without having to leave Telegram.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 3,
     
     },
     {
@@ -14,7 +14,7 @@ export const projects = [
       description: "This is an Instagram download bot for power users. It is written in Python using the Instaloader library and is designed to be used by users who need to download a large number of images, videos, and reels from Instagram on a regular basis.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
     {
@@ -23,7 +23,7 @@ export const projects = [
       description: "A multi-function AI bot can be used to automate a variety of tasks, freeing up human time and resources. It can also provide personalized assistance to users, making it a valuable tool for customer service, education, and entertainment. Additionally, it is highly scalable, so it can be used to support a large number of users.",
       link: "#",
       viewLink: "Iamhere",
-      level: 1,
+      level: 3,
     
     },
     {
@@ -32,7 +32,7 @@ export const projects = [
       description: "An AI Tools Telegram Userbot is a Python program that extends the functionality of the Telegram messaging app by adding AI-powered features. It is written in Python using the Telethon library and a variety of AI libraries, such as TensorFlow, PyTorch, and Hugging Face Transformers.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 3,
     
     },
     {
@@ -41,7 +41,7 @@ export const projects = [
       description: "The app is easy to use and can be deployed on any platform that supports Python. To use the app, simply enter a location and the app will retrieve the weather data from AccuWeather. The app will then display the current weather conditions, as well as the forecast for the next five days.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
     {
@@ -70,7 +70,7 @@ export const projects = [
       A variety of customization options",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
     {
@@ -79,7 +79,7 @@ export const projects = [
       description: "Restaurant Website Template in React and SCSS\nThis is a restaurant website template created using React and SCSS. It is a modern, responsive, and easy-to-use website template that can be customized to match the branding of any restaurant.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
     {
@@ -106,7 +106,7 @@ export const projects = [
       description: "This is a paid portfolio created using Three.js, a JavaScript library for creating and rendering 3D graphics. It is a modern, immersive, and interactive portfolio that allows you to showcase your work in a unique and engaging way.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
     {
@@ -124,38 +124,20 @@ export const projects = [
       description: "Next.js is a React framework for building server-rendered and static web applications. It is known for its speed, performance, and scalability. Next.js is a great choice for building eCommerce websites because it can handle a large number of concurrent users and transactions without sacrificing performance.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 3,
     
     },
     {
-      title: "CodSoft Internship",
-      avtarImg: "https://source.unsplash.com/persons-hand-with-white-manicure-UaM5CWZK3nU",
-      description: "This was a internship I was doing online for better opponuties of jobs and I have successfully completed many domains of them such as 'Web Development', 'UI/UX', 'Python Programming', 'Ai/ML'.",
-      link: "#",
-      viewLink: "",
-      level: 1,
-    
-    },
-    {
-      title: "Simple Calculator [For CodSoft]",
-      avtarImg: "https://source.unsplash.com/a-calculator-sitting-on-top-of-a-table-DEga33BYvmA",
-      description: "This is just a simple calculator which I've created for CodSoft Internship. It was written in Jsx and SCSS.",
-      link: "#",
-      viewLink: "",
-      level: 1,
-    
-    },
-    {
-      title: "Landing Page [For CodSoft]",
+      title: "Landing Page",
       avtarImg: "https://source.unsplash.com/a-laptop-computer-sitting-on-top-of-a-desk-QoCP9hbrgvA",
       description: "This was also a landing page Which I have created for CodSoft Internship.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
     {
-      title: "Portfolio [For CodSoft]",
+      title: "Portfolio",
       avtarImg: "https://source.unsplash.com/a-white-object-on-a-blue-background-with-a-shadow-9-dkDEXWGzI",
       description: "This was a basic portfolio created in ReactJs and SCSS. for the internship of CodSoft",
       link: "#",
@@ -169,7 +151,7 @@ export const projects = [
       description: "This was my own live portfolio Which You are surfing currently",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 3,
     
     },
     {
@@ -178,7 +160,7 @@ export const projects = [
       description: "This was the notes app I created in my initial days of learning Web Development and created using Basic Stack of Web Development.",
       link: "#",
       viewLink: "",
-      level: 1,
+      level: 2,
     
     },
   ];

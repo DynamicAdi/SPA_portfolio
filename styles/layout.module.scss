@@ -36,12 +36,10 @@
         overflow: hidden;
         position: relative;
         backdrop-filter: blur(3px);
-        // border: 1px solid $grey;
-         
+
         &.intro {
         grid-column: 1/ span 3;
         grid-row: 1 / span 3;
-        // background: url('./../public/color.png');
         background-position: center center;
         background-repeat: no-repeat;
         overflow: initial;
@@ -80,7 +78,7 @@
         }
         @include media(mobile) {
             grid-column: 1 / 11;
-            grid-row: 10 / 14;
+            grid-row: 7 / 15;
         }
     }   
     &.skills {
@@ -110,7 +108,7 @@
         
         @include media(mobile) {
             grid-column: 1/11;  
-            grid-row: 20 / 27; 
+            grid-row: 20 / 20; 
             height: 20rem;
         }
     }
@@ -124,7 +122,7 @@
         }
         @include media(mobile) {
             grid-column: 1/11;   
-            grid-row: 27 / 30;
+            grid-row: 21 / 21;
             height: 13rem;
         }
        
@@ -142,7 +140,7 @@
         }
         @include media(mobile) {
             grid-column: 1/11;   
-            grid-row: 30 / 33;
+            grid-row: 22 / 23;
             height: 13rem;
         }
     }

@@ -8,6 +8,7 @@ import img from "@/public/utils/contact.webp";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { MdDone, MdOutlineWifiTetheringErrorRounded } from "react-icons/md";
+import Image from "next/image";
 
 
 const Success = () => {
@@ -30,7 +31,7 @@ const Success = () => {
     className={style.popup}
     >
     <h1>Message Sent! <MdDone className={style.done}/></h1>
-    <p>Your message has been successfully sent to Dev Adarsh, Its a request to wait for a while he'll try to reach you back as soon as possible.</p>
+    <p>Your message has been successfully sent to Dev Adarsh, Its a request to wait for a while he&apos;ll try to reach you back as soon as possible.</p>
     </motion.div>
   )
 }
@@ -199,7 +200,7 @@ const[Text, SetText] = useState("");
             }}
             className={style.image}
           >
-            <img src={img.src} alt="connect with us" />
+            <Image src={img.src} className={style.img} alt="connect with us" width={500} height={550} priority={true}/>
           </motion.div>
         </motion.div>
       </div>

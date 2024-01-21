@@ -22,9 +22,9 @@
     p {
         font-family: var(--second-font);
         font-weight: 300;
-        font-size: 0.95rem;
+        font-size: 1.1rem;
         margin-top: 4px;
-        line-height: 1.1rem;
+        line-height: 1.3rem;
         @include media(tablet) {
             font-size: 1.16rem;
                 line-height: initial;

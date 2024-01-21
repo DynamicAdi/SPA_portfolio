@@ -3,12 +3,15 @@ import "@/styles/slick.css"
 import { useRouter } from 'next/router'
 import {motion, AnimatePresence} from "framer-motion"
 
+import { Analytics } from '@vercel/analytics/react';
+
 export default function App({ Component, pageProps }) {
   const router = useRouter();  
   return (
     <AnimatePresence mode='wait'>
       <motion.div key={router.pathname}>
         <Component {...pageProps} />
+        <Analytics />
         <motion.div className="slide-in"
         initial={{scaleY: 0}}
         animate={{scaleY: 0}}

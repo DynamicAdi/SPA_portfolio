@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from "@/styles/Projects.module.scss";
 import { primary, titles } from "@/public/utils/fonts";
 import { projects } from "@/data/projects";
 import Link from "next/link";
 import { Links } from "./Background";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function Projects() {
   const[code, Setcode] = useState("");
@@ -41,17 +42,15 @@ function Projects() {
       className={style.child}>
         {projects.map((data, index) => {
 
-          useEffect(() => {
-            if (data.level===1) {
-              Setcode("Basic")
-            }
-            else if(data.level===2) {
-              Setcode("Intermediate")
-            } 
-            else if(data.level===3) {
-              Setcode("Advanced")
-            }
-          }, [])
+            // if (data.level===1) {
+            //   Setcode("Basic")
+            // }
+            // else if(data.level===2) {
+            //   Setcode("Intermediate")
+            // } 
+            // else if(data.level===3) {
+            //   Setcode("Advanced")
+            // }
 
           return (
             <motion.div variants={item} className={style.boxes} key={index}>
@@ -64,7 +63,9 @@ function Projects() {
                       ${data.level === 2 && `${style.imidate}`}
                       ${data.level === 3 && `${style.hard}`}
                       `}>
-                      {code}
+                      {data.level === 1 && `Basic`}
+                      {data.level === 2 && `Intermediate`}
+                      {data.level === 3 && `Advanced`}
                     </h3>
                   </div>
                   <h2>{data.title}</h2>

@@ -77,6 +77,7 @@
       
 
       .image {
+        width: 32rem;
         position: absolute;
         right: -15%;
         top: 10%;
@@ -85,14 +86,12 @@
         z-index: 1;
         }
         @include media(mobile) {
+          width: 24rem;
           opacity: 0.4;
         z-index: 1;
         }
-        img {
-          width: 32rem;
-          @include media(mobile) {
-            width: 24rem;
-          }
+        .img {
+          width: 100%;
         }
       }
       .heading {

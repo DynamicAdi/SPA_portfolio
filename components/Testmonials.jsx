@@ -3,11 +3,13 @@ import style from "@/styles/feedback.module.scss";
 import { VscFeedback } from "react-icons/vsc";
 import { PiQuotesFill } from "react-icons/pi";
 import Slider from "react-slick";
+import { feedback } from "@/data/testmonials";
+
 
 export default function Testmonials() {
 
   const settings = {
-    dots: false,
+    dots: true,
     arrows: false,
     fade: false,
     infinite: true,
@@ -15,7 +17,8 @@ export default function Testmonials() {
     slidesToScroll: 1,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 2800,
+    dotsClass: "button__bar",
     responsive: [
       {
         breakpoint: 1024,
@@ -47,20 +50,28 @@ export default function Testmonials() {
         <VscFeedback />
         <h2>Testmonials</h2>
       </div>
-  {/* <Slider {...settings}> */}
-      <div className={style.testmonials}>
+    <div className={style.parent}>
+  <Slider {...settings} className={style.slideMenu}>
+
+  {feedback.map((items, index) => {
+    return (
+      <div className={style.testmonials} key={index}>
         <div className={style.quotes}>
           <PiQuotesFill />
         </div>
         <p>
-        Lorem ipsum dolonndis suscipit, consequatur placeat a velit Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit 343433
-        </p>
+        {items.UserFeedback}
+         </p>
         <div className={style.user}>
-          <h2 className={style.name}>Adarsh Pandit</h2>
-          <h3 className={style.designation}>Web Developer</h3>
+          <h2 className={style.name}>{items.UserName}</h2>
+          <h3 className={style.designation}>{items.UserProfession}</h3>
         </div>
       </div>
-  {/* </Slider> */}
+    )
+  })}
+      
+  </Slider>
+    </div>
     </div>
   );
 }
