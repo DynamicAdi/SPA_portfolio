@@ -36,7 +36,7 @@ export default function Skills() {
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
     responsive: [
       {
