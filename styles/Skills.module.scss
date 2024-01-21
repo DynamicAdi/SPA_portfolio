@@ -50,8 +50,8 @@
           @include flex(flex-start, flex-start, row);
           gap: 20px;
           @include media(mobile) {
-            padding: 0.4rem 1.5rem;
-            gap: 15px;
+            // padding: 0.4rem 1.5rem;
+            gap: 0px;
           }
           .round {
             width: 4.5rem;
@@ -60,13 +60,17 @@
             color: black;
             @include flex();
             @include media(mobile) {
-              width: 4rem;
-              height: 4rem;
+              width: 3.5rem;
+              height: 3.5rem;
               gap: 20px;
             }
             svg {
               width: 3rem;
               height: 3rem;
+            @include media(mobile) {
+              width: 2rem;
+              height: 2rem;
+            }
             }
 
             img {
