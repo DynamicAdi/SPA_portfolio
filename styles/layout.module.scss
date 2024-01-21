@@ -41,8 +41,11 @@
         &.intro {
         grid-column: 1/ span 3;
         grid-row: 1 / span 3;
-        background: $gradient;
-
+        // background: url('./../public/color.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: initial;
+        background-size: cover;
         @include media(tablet) {
             grid-column: 1 / 6;
             grid-row: 1/ 3;

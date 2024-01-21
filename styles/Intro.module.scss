@@ -1,0 +1,34 @@
+@import "./global";
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+    // background: white;
+    overflow: initial;
+
+    img {
+        position: absolute;
+        inset: 0;
+        top: -18%;
+        left: -12%;
+        width: 120%;
+        height: 120%;
+        object-fit: contain;
+        z-index: 999;
+        @include media(tablet) {
+            width: 104%;
+            height: 100%;
+            left: -2%;
+        }
+        @include media(mobile) {
+            width: 100%;
+            height: 105%;
+            left: 0;
+            top: 0;
+            
+            // scale: 0.7;
+        }
+    }
+}

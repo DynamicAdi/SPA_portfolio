@@ -10,6 +10,7 @@ import Goals from './Goals';
 import Testmonials from './Testmonials';
 import HeadProject from './HeadProject';
 import {easeIn, motion} from "framer-motion"
+import Intro from './Intro';
 
 export default function HomeBox() {
 
@@ -38,7 +39,7 @@ export default function HomeBox() {
           ease: [0.34, 1.56, 0.64, 1]
         }}
         
-        className={`${css.box} ${css.intro}`}>INTRO</motion.div>
+        className={`${css.box} ${css.intro}`}><Intro /></motion.div>
         <motion.div 
         initial={{
           y: -100,
