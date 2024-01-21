@@ -1,7 +1,10 @@
 
 import Page from '@/components/Page'
-import Projects from '@/components/Projects'
 import Head from 'next/head'
+import { Suspense, lazy } from 'react'
+
+// import Projects from '@/components/Projects'
+const Projects = lazy(() => import('@/components/Projects'))
 
 export default function Home() {
   return (
@@ -13,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Page>
-        <Projects />
+      <Suspense fallback={<h1 style={{textAlign: 'center', letterSpacing: '2px', textTransform: 'uppercase', }}>Loading Projects...</h1>}><Projects /></Suspense>
       </Page>
     </>
   )
