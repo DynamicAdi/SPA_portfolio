@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "@/styles/Intro.module.scss";
-import logo from "@/public/logo.png";
+import logo from "@/public/orange.png";
 
 
 export default function Intro() {

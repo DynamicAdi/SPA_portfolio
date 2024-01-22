@@ -41,6 +41,8 @@
             grid-column: 1/ span 3;
             grid-row: 1 / span 3;
             overflow: initial;
+            background: $gradient;
+            z-index: 99;
             @include media(tablet) {
                 grid-column: 1 / 6;
                 grid-row: 1/ 3;
