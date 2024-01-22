@@ -39,7 +39,7 @@ export const feedback = [
     {
         UserName: "Partik Sharma",
         UserProfession: "Frontend Developer",
-        UserFeedback: "He is such a great designer. His design always inspre me to do more and more. He is really creative Designer",
+        UserFeedback: "He is such a great designer. His design always inspire me to do more and more. He is really creative Designer",
     },
     {
         UserName: "Kajal Kumari",
