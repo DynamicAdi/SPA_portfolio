@@ -22,9 +22,9 @@ function MainContacts() {
             <a href="https://www.linkedin.com/in/devadarsh"><li><SiLinkedin /></li></a>
             <a href="https://wa.me/+919484025507"><li><SiWhatsapp /></li></a>
             <a href="https://t.me/Alone_Loverboy"><li><SiTelegram /></li></a>
-            <a href="https://instagram.com/Itz_.programmer"><li><SiInstagram /></li></a>
+            <a href="https://instagram.com/coding_champions_"><li><SiInstagram /></li></a>
             <a href="https://https://ko-fi.com/dev_adarsh"><li><SiKofi /></li></a>
-            <a href="https://https://youtube.com/@hobbiestcodes"><li><SiYoutube /></li></a>
+            <a href="https://https://youtube.com/@coding_champions"><li><SiYoutube /></li></a>
           </ul>
         </div>
         <p>Feel Totally free to connect with me you can ask me any queries or we can talk casually too!😉 <br />Just Connect via the <span>Social Media</span> mentioned above or simply <span>Message Me!</span></p>
